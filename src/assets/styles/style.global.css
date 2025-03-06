@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@487&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-quicksand-sans: "Quicksand", sans-serif;
+  --background-image-hero-pattern: url("/banner.jpg");
+}
+
+@layer base {
+  body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  main {
+    @apply min-h-screen relative;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-slate-900;
+  }
+}
+
+@layer components {
+  .pattern {
+    @apply bg-hero-pattern w-full h-full bg-center bg-cover absolute top-0 left-0 z-0;
+  }
+
+  .search {
+    @apply block w-full appearance-none rounded-lg bg-transparent py-6 pl-9 pr-4 text-base text-slate-900 transition placeholder:text-slate-400 focus:outline-none sm:text-[0.8125rem] sm:leading-6 [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none [&::-webkit-search-results-button]:appearance-none [&::-webkit-search-results-decoration]:appearance-none;
+  }
+
+  .square {
+    @apply flex-1 
+    aspect-square 
+    bg-slate-100 
+    rounded-2xl 
+    flex flex-col 
+    justify-center 
+    items-center
+    shadow-xs
+    transition
+    cursor-pointer
+    hover:shadow-md
+    overflow-hidden
+    p-5
+    box-content
+    border
+    border-slate-200;
+
+    & span {
+      @apply text-[3rem] md:text-[4rem] lg:text-[5rem];
+    }
+
+    & small {
+      @apply font-bold text-slate-700 text-wrap text-center text-xs;
+    }
+  }
+}
+
+@utility bor {
+  border: 1px solid red;
+}
