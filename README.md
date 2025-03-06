@@ -2,7 +2,7 @@
 
 A modern application to easily search and explore emojis, built with the latest web technologies.
 
-![Emoji Finder Banner](https://via.placeholder.com/1200x630/f3f4f6/334155?text=Emoji+Finder)
+![Emoji Finder Banner](https://github.com/4ndresdev/emoji-finder/blob/0328fcc535d84e04d1aab59e0a21c5641542c6d1/public/banner-placeholder.png?raw=true)
 
 ## 🚀 Tech Stack
 
