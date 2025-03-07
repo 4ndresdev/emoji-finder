@@ -9,7 +9,7 @@ const Home = () => {
     <main>
       <Header />
       <Search setSearch={setSearch} />
-      <section className="max-w-7xl mx-auto px-8 py-6 sm:px-6 lg:px-8 flex flex-col gap-5">
+      <section className="max-w-7xl mx-auto px-6 py-6 lg:px-8 flex flex-col gap-5">
         {search && (
           <h1 className="text-2xl">
             <span className="text-slate-500">Finding:</span> {search}

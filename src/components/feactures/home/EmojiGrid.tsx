@@ -28,7 +28,7 @@ function EmojiGrid({ search }: EmojiGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5">
+    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 md:gap-5">
       {emojis.map((emoji) => (
         <EmojiCard key={emoji.id} emoji={emoji} />
       ))}
